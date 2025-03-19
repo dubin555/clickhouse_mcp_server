@@ -1,0 +1,11 @@
+[project]
+name = "clickhouse-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "clickhouse-connect>=0.8.15",
+    "httpx>=0.28.1",
+    "mcp>=1.4.1",
+]

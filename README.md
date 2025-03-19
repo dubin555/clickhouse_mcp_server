@@ -1,0 +1,1 @@
+# clickhouse_mcp_server

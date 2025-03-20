@@ -1,7 +1,8 @@
 [project]
 name = "clickhouse-mcp-server"
+packages = [{ include = "src/clickhouse_mcp_server" }]
 version = "0.1.0"
-description = "Add your description here"
+description = "A Model Context Protocal (MCP) server that enables secure interaction with Clickhouse. This server allows AI assistants to list tables, read data, and execute SQL queries through a controlled interface, making database exploration and analysis safer and more structured."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -9,3 +10,21 @@ dependencies = [
     "httpx>=0.28.1",
     "mcp>=1.4.1",
 ]
+
+[project.authors]
+name = "dubin555"
+email = "dubin555@gmail.com"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+    "venv",
+    ".git",
+    ".gitignore"
+]
+
+[project.scripts]
+clickhouse-mcp-server = "clickhouse_mcp_server:main"

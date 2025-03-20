@@ -11,9 +11,9 @@ dependencies = [
     "mcp>=1.4.1",
 ]
 
-[project.authors]
-name = "dubin555"
-email = "dubin555@gmail.com"
+authors= [
+    { name = "dubin555", email = "dubin555@gmail.com"}
+]
 
 [build-system]
 requires = ["hatchling"]
